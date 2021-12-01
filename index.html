@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            ROCK PAPER SCISSORS
+        </h1>
+    </header>
+    <div class="score-board">
+        <div class="badge" id="user-label">user</div>
+        <div class="badge" id="comp-label">comp</div>
+        <span id="user-score">0</span>:<span id="comp-score">0</span>
+    </div>
+    <div class="results">
+        <p>
+            LET'S START! GIVE YOUR CHOICE A SHOT!
+        </p>
+    </div>
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="data:image/png;base64,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"
+                alt="">
+        </div>
+        <div class="choice" id="p">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLsdtCNHGDq16BV6ys6DhB7FV_U27NaS8qg&usqp=CAU" alt="">
+        </div>
+        <div class="choice" id="s">
+            <img src="https://www.publicdomainpictures.net/pictures/50000/velka/victory-sign-silhouette.jpg" alt="">
+        </div>
+    </div>
+    <div class="message">MAKE YOUR MOVE</div>
+
+    <DIV class="RESTART"><button id="a">RESTART</button></DIV>
+    <script src="app.js"></script>
+
+</body>
+
+
+</html>
